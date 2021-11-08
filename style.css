@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: #f2f2f2;
+  padding: 15px 20px;
+  position: fixed;
+  top: 0;
+  transition: padding 300ms ease;
+}
+
+/******** when header is sticky ***************/
+header.sticky {
+  /* transition property controls the rate of change of any property */
+  padding: 10px 20px;
+}
+
+a.nav__link {
+  margin-right: 10px;
+  font-size: 14px;
+  color: #000000;
+  text-decoration: underline;
+}
+
+a.nav__link:last-child {
+  margin-right: 0;
+}
+
+section.content {
+  padding: 20px;
+  /* give margin-top to the main section equal to the height of the header*/
+  margin-top: 70px;
+}
